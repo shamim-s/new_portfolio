@@ -1,0 +1,295 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+.hero {
+    width: 100%;
+    height: 990px;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container_hero {
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.content-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.heading-one {
+    font-size: 76px;
+    margin: 0%;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    line-height: 82px;
+    background-image: url("/imgs/fluid.jpg");
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.heading-three {
+    margin: 0%;
+    color: #fff;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    font-size: 12px;
+}
+
+.paragraph {
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.buttion-wrapper {
+    padding: 6px;
+    width: 190px;
+    border-radius: 50px;
+    background-image: url("/imgs/fluid.jpg");
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    position: relative;
+}
+
+.primary-btn {
+    padding: 18px 32px;
+    font-weight: 600;
+    color: #000;
+    font-size: 18px;
+    border: 2px;
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.initial {
+    margin-left: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    color: rgb(0, 0, 0);
+}
+
+.absolute {
+    margin-left: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    right: 2%;
+    color: rgb(0, 0, 0)
+}
+
+.image-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    overflow: hidden;
+}
+
+.fluid {
+    width: 70%;
+    height: 400px;
+    background-image: url("/imgs/fluid.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+
+
+/*  navbar style section */
+
+.menu_icon {
+    display: none;
+}
+
+.drop_down {
+    display: none;
+}
+
+.nav {
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+    bottom: 5%;
+}
+
+.nav .nav-container {
+    width: 70%;
+    margin: auto;
+    border-radius: 50px;
+    background: linear-gradient( 94deg, rgba(255, 176, 233, 0.15) 0%, rgba(203, 255, 252, 0.1) 45.11%, rgba(107, 83, 255, 0.22) 100%);
+    backdrop-filter: blur(120.5px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.nav .nav-container ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    color: #aaaaaa;
+}
+
+.nav .nav-container li {
+    transition: 0.2s ease;
+}
+
+.nav .nav-container li:hover {
+    scale: 1.1;
+    transition: 0.2s ease;
+    color: #ffffff;
+}
+
+.nav .nav-container .logo {
+    font-size: 24px;
+    margin: 0%;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 82px;
+    color: #fff;
+}
+
+.nav .nav-container button {
+    padding: 12px 26px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+
+/* about section  */
+
+.text_center {
+    text-align: center;
+}
+
+.d_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about {
+    height: auto;
+    background-color: #000;
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.about h1,
+.about p {
+    margin: 0%;
+}
+
+.about h1 {
+    font-size: 64px;
+    line-height: 64px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 900;
+    background-image: url("/imgs/fluid.jpg");
+    -webkit-background-clip: text;
+    background-size: cover;
+    color: transparent;
+    display: inline-block;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    height: 100%;
+}
+
+.about_img {
+    width: 50%;
+    overflow: hidden;
+}
+
+.about_contents {
+    width: 50%;
+}
+
+.img_wrapper {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.about_img {
+    width: 500px;
+    height: 500px;
+    background-image: url('/imgs/fluid.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 30px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 20s linear infinite;
+}
+
+.person_img {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.main_img {
+    width: 450px;
+    height: 450px;
+    object-fit: contain;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

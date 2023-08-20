@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Inter:wght@200;300;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/2b79e71427.js" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <!-- main css  -->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="about.css" />
+
+    <!-- media query  -->
+    <link rel="stylesheet" href="./MediaQury/HeroMediaQury.css" />
+    <link rel="stylesheet" href="./MediaQury/tablet.css" />
+</head>
+
+<body onload="pageLoad()">
+    <div id="drop_down" class="drop_down">
+        <li class="drop_li">Home</li>
+        <li class="drop_li">About</li>
+        <li class="drop_li">Skills</li>
+        <li class="drop_li">Projects</li>
+        <li class="drop_li">Contact</li>
+    </div>
+
+    <!-- hero section  -->
+    <section class="hero">
+        <div class="container_hero">
+            <div id="content-wrapper" class="content-wrapper">
+                <div class="wrapper">
+                    <h3 class="heading-three">
+                        Experience a seamless creative concept
+                    </h3>
+
+                    <h1 class="heading-one">Creating Seamless Digital Experiences</h1>
+
+                    <p class="paragraph">
+                        Welcome to a world where imagination knows no bounds. Our cutting-edge tools and solutions are here to empower your creative journey like never before.
+                    </p>
+
+                    <div class="buttion-wrapper">
+                        <button onmouseenter="mouse_in()" onmouseleave="mouse_out()" id="btn" class="primary-btn">
+                RESUME
+                <i id="one" class="fa-solid fa-arrow-down initial">
+                  <i id="absolute" class="fa-solid fa-arrow-down absolute"></i>
+                </i>
+              </button>
+                    </div>
+                </div>
+            </div>
+            <div class="image-wrapper">
+                <div id="fluid" class="fluid"></div>
+            </div>
+        </div>
+    </section>
+    <!-- hero section  -->
+
+    <!-- about section  -->
+    <section id="about" class="about">
+        <div class="container d_flex">
+            <div class="img_wrapper">
+                <div class="about_img">
+
+                </div>
+                <div class="person_img d_flex">
+                    <img class="main_img" src="/imgs/person.png" alt="">
+                </div>
+            </div>
+            <div class="about_contents">
+                <h1>About</h1>
+                <div>
+                    <p>
+                        Hello! I'm a dedicated frontend developer with a fervent passion for crafting engaging and visually captivating user experiences on the web. With a solid foundation in web technologies and a keen eye for design, I thrive on turning ideas into interactive
+                        realities that leave a lasting impact.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section  -->
+
+    <!-- Navbar  -->
+    <nav class="nav">
+        <div class="nav-container">
+            <h2 class="logo">Shamim s.</h2>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Skills</li>
+                <li>Projects</li>
+                <li>Contact</li>
+            </ul>
+            <button>RESUME</button>
+            <div id="menu_icon" class="menu_icon">
+                <div id="line_1" class="menu_line line_1"></div>
+                <div id="line_2" class="menu_line line_2"></div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar  -->
+
+    <!-- JavaScript Connections -->
+    <script src="/app.js"></script>
+</body>
+
+</html>
