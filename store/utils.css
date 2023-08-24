@@ -1,0 +1,16 @@
+.text-center {
+    text-align: center;
+}
+
+.txt-white {
+    color: #fff;
+}
+
+.width-half {
+    width: 50%;
+}
+
+.pt-pb {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}

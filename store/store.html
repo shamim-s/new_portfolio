@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S STORE</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Inter:wght@200;300;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="store.css" />
+    <link rel="stylesheet" href="utils.css" />
+</head>
+
+<body>
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="section-title txt-white text-center">S Store</h1>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="search-wrapper">
+                <h2 class="">All Products</h2>
+
+                <div class="search-box">
+                    <input type="text" class="search width-half" placeholder="Search" />
+                    <div class="categories width-half">
+                        <select name="cars select" id="cars">
+                <option class="option" value="volvo">Volvo</option>
+                <option class="option" value="saab">Saab</option>
+                <option class="option" value="mercedes">Mercedes</option>
+                <option class="option" value="audi">Audi</option>
+              </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producs-list">
+                <div class="cards-wrapper">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" class="card-img" alt="">
+                        <div class="card-content">
+                            <h3 class="card-heading">This is card</h3>
+                            <p class="card-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil impedit assumenda doloremque nam quis facere officia doloribus ab magnam</p>
+
+                            <p class="card-price">$200.00</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript Connections -->
+    <script src="store.js"></script>
+</body>
+
+</html>

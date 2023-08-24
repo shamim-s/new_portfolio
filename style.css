@@ -191,16 +191,6 @@ body {
 
 /* about section  */
 
-.text_center {
-    text-align: center;
-}
-
-.d_flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .about {
     height: auto;
     background-color: #000;
@@ -292,4 +282,70 @@ body {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.contact {
+    background-color: #000;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contact h1 {
+    font-size: 64px;
+    line-height: 64px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 900;
+    background-image: url("/imgs/fluid.jpg");
+    -webkit-background-clip: text;
+    background-size: cover;
+    color: transparent;
+    display: inline-block;
+}
+
+.form_content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.form_content img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.form {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.field {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.field input {
+    color: #fff;
+    font-size: 16px;
+    padding: 18px 29px;
+    border-radius: 50px;
+    background: none;
+    border: 2px solid #fff;
+}
+
+.field input:focus {
+    border: 2px solid #fff;
 }
