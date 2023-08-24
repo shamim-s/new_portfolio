@@ -15,6 +15,9 @@
     <!-- main css  -->
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="/css_utils.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- media query  -->
     <link rel="stylesheet" href="./MediaQury/HeroMediaQury.css" />
@@ -65,15 +68,13 @@
     <!-- about section  -->
     <section id="about" class="about">
         <div class="container d_flex">
-            <div class="img_wrapper">
-                <div class="about_img">
-
-                </div>
+            <div class="img_wrapper" data-aos="zoom-in">
+                <div class="about_img"></div>
                 <div class="person_img d_flex">
-                    <img class="main_img" src="/imgs/person_black.png" alt="">
+                    <img class="main_img" src="/imgs/person.png" alt="">
                 </div>
             </div>
-            <div class="about_contents">
+            <div class="about_contents" data-aos="zoom-out-left">
                 <h1>About</h1>
                 <div>
                     <p>
@@ -125,8 +126,58 @@
     </nav>
     <!-- Navbar  -->
 
+    <!-- Contact section  -->
+    <section class="contact">
+        <div class="container d_grid">
+            <div class="form_content pr_10 pl_10" data-aos="fade-up" data-aos-duration="3000">
+
+            </div>
+            <div class="form_content pr_10 pl_10" data-aos="fade-up" data-aos-duration="3000">
+                <h1>Get in touch</h1>
+                <p class="paragraph">
+                    Have an inquiry or some feedback for us? Fill out the form below to contact our team
+                </p>
+
+                <form class="form">
+                    <div class="field">
+                        <label for="fname" id="fname_label" class="absolute">First name</label>
+                        <input onfocus="handleFocus()" onblur="handleBlur()" type="text" id="fname" placeholder="" />
+                    </div>
+                    <div class="field">
+                        <label for="lname">Last name</label>
+                        <input type="text" id="lname" placeholder="" />
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="" />
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="buttion-wrapper">
+                        <button type="/" onmouseenter="mouse_in()" onmouseleave="mouse_out()" id="btn" class="primary-btn">
+                SUBMIT
+                <i id="one" class="fa-solid fa-arrow-down initial">
+                  <i id="absolute" class="fa-solid fa-arrow-down absolute"></i>
+                </i>
+              </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <!-- Contact section  -->
+
     <!-- JavaScript Connections -->
     <script src="/app.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

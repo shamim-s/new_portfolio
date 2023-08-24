@@ -88,4 +88,24 @@ menuIcon.addEventListener('click', function() {
 
 // about section
 
-let about = document.getElementById('about');
+let fname_label = document.getElementById('fname_label');
+fname_label.style.transition = 'all 0.3s ease';
+
+function handleFocus() {
+    fname_label.style.transition = 'all 0.3s ease';
+    fname_label.style.top = '-20%';
+    fname_label.style.backgroundColor = '#000';
+    fname_label.style.paddingRight = '10px';
+    fname_label.style.paddingLeft = '10px';
+    fname_label.style.width = '12%';
+    fname_label.style.fontSize = '16px';
+}
+
+function handleBlur() {
+    fname_label.style.transition = 'all 0.3s ease';
+    fname_label.style.top = '35%';
+    fname_label.style.backgroundColor = 'none';
+    fname_label.style.paddingRight = '0px';
+    fname_label.style.paddingLeft = '0px';
+    fname_label.style.fontSize = '14px';
+}
